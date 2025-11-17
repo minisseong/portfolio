@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Profile</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+<div class="container">
+    
+    <div id="profile-view" class="active-view">
+        <div class="profile-card">
+            <div class="header">
+                <span class="icon back-arrow">←</span>
+                <h1 class="username">username</h1>
+                <span class="icon menu-icon">≡</span>
+            </div>
+
+            <div class="profile-info">
+                <img class="profile-picture" src="https://i.pinimg.com/736x/5b/87/a6/5b87a6866c7371b07eff07383451e0b8.jpg" alt="Profile Picture">
+                <div class="stats">
+                    <div class="stat-item"><span class="stat-number">20</span><span class="stat-label">Posts</span></div>
+                    <div class="stat-item"><span class="stat-number">821</span><span class="stat-label">Followers</span></div>
+                    <div class="stat-item"><span class="stat-number">165</span><span class="stat-label">Following</span></div>
+                </div>
+            </div>
+
+            <div class="bio">
+                <div class="name-pronouns">
+                    <span class="name">Name</span>
+                </div>
+                <p class="description">info info info info info</p>
+            </div>
+
+            <div class="actions">
+                <button class="btn follow-btn">Following</button>
+                <button class="btn message-btn">Message</button>
+            </div>
+
+            <div class="posts-grid">
+                <div class="post-item post-1" onclick="showPost(1)"></div>
+                <div class="post-item post-2" onclick="showPost(2)"></div>
+                <div class="post-item post-3" onclick="showPost(3)"></div>
+                <div class="post-item post-4" onclick="showPost(4)"></div>
+                <div class="post-item post-5" onclick="showPost(5)"></div>
+                <div class="post-item post-6" onclick="showPost(6)"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="post-view" class="hidden-view">
+        <div class="profile-card">
+            <div class="post-back-nav" onclick="showProfile()">
+                <span class="icon back-arrow">←</span>
+                <span class="username">Back to Profile</span>
+            </div>
+
+            <div class="post" id="current-post">
+                <p style="text-align:center; padding: 20px;">Post content loads here...</p>
+            </div>
+
+            <div class="footer-note">
+                (Made with Carrd)
+            </div>
+        </div>
+    </div>
+    
+</div>
+    <div class="container">
+        <div id="profile-view" class="active-view">
+            </div>
+        <div id="post-view" class="hidden-view">
+            </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
